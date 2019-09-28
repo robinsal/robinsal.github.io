@@ -1,0 +1,57 @@
+body {
+    background-color: white;
+}
+
+.logo-placement {
+    top: 250px;
+    left: 500px;
+    position: absolute;
+    visibility: show;
+}
+
+#search-box {
+    width: 463px;
+    height: 30px;
+    border: 1px solid #ccc;
+    top: 350px;
+    left: 400px;
+    position: absolute;
+}
+
+#magnifying-glass {
+    top: 5px;
+    left: 5px;
+    position: absolute;
+}
+
+#search-button {
+    top:400px;
+    left:520px;
+    position: absolute;
+    width:105px;
+    height:28px;
+    background-color:#ddd;
+}
+
+#search-button #text {
+    top: -10px;
+    left:4px;
+    position:absolute;
+    color: #444;
+}
+
+#feeling-lucky {
+    top: 400px;
+    left:635px;
+    position: absolute;
+    background-color: #ddd;
+    width:105px;
+    height:28px;
+}
+
+#feeling-lucky #text {
+    top: -10px;
+    left:7px;
+    position: absolute;
+    color: #444;
+}
