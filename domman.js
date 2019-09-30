@@ -31,17 +31,22 @@ for (i = 0; i < 30; i++) {
  * The color of a cell reverses when hovered on due to this function.
 */
 function setColor() {
-    if (this.style.backgroundColor === 'white') {
-        this.style.backgroundColor = 'black';
-        blackcells.push(this);
-    } else {
-        this.style.backgroundColor = 'white';
-        blackcells.remove(this);
+    //    if (this.style.backgroundColor === 'white') {
+    //    this.style.backgroundColor = 'black';
+    //    blackcells.push(this);
+    //} else {
+    this.style.backgroundColor = 'black';
+    //blackcells.remove(this);
+    
+    //}
+    if (!blackcells.includes(this)) {
+	blackcells.push(this);
     }
 }
 
 const clearAll = document.createElement('button');
 function clear() {
+    console.log(blackcells);
     var i;
     for (i = 0; i < blackcells.length; i++) {
         blackcells[i].style.backgroundColor = 'white';
